@@ -68,3 +68,47 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+<!-- добавить alert и добавить текст и стили -->
+
+
+
+
+<!-- <NutritionTitle />
+
+			<div className='analys__container'>
+				<h2 className='analys_title'>Let's do analysis</h2>
+
+				<form onSubmit={finalSearch}>
+					<input
+						className='analys_input'
+						type='text'
+						placeholder='Search...'
+						onChange={myRecipeSearch}
+						value={mySearch}
+					/>
+
+					<button onClick={finalSearch} type='submit' className='analys_btn'>
+						Search
+					</button>
+				</form>
+			</div>
+
+			<div className='calories'>
+				{nutrition && <p className='calories_p'> {nutrition.calories} kcal</p>}
+
+				{nutrition &&
+					Object.values(nutrition.totalNutrients).map(
+						({ label, quantity, unit, index }) => (
+							<Nutrition
+								label={label}
+								quantity={quantity}
+								unit={unit}
+								key={index}
+							/>
+						)
+					)}
+			</div>  -->
