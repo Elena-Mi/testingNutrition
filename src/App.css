@@ -1,38 +1,389 @@
-.App {
-  text-align: center;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+	background-color: rgb(252, 252, 252);
+	filter: drop-shadow(0 0 10px rgb(50, 146, 50))
+		drop-shadow(0 0 10px rgb(235, 235, 235));
+
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+}
+ul {
+	list-style: none;
+	display: flex;
+}
+.link {
+	text-decoration: none;
+	color: #232323;
+	text-transform: uppercase;
+	padding: 10px 40px;
+	transition: 2s;
+	text-align: center;
+	font-size: 16px;
+}
+.link:hover {
+	background-color: rgb(50, 146, 50);
+	text-decoration: underline;
+	transform: scale(0.5);
+}
+.analys__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.analys_title {
+	font-size: 40px;
+	margin-top: 15px;
+	color: rgb(50, 146, 50);
+	text-shadow: 1px 1px #232323;
+}
+.analys_input {
+	width: 100%;
+	padding: 12px 24px;
+	color: #232323;
+	font-size: 16px;
+	box-shadow: inset 0px 0px 0px 2px #96daab;
+	border-radius: 8px;
+	margin-top: 10px;
+}
+.analys_btn {
+	margin-top: 10px;
+	border-radius: 8px;
+	background-color: rgb(50, 146, 50);
+	width: 100%;
+	font-size: 17px;
+	padding: 12px 10px;
+	color: rgb(235, 235, 235);
+	filter: drop-shadow(0 0 10px rgb(175, 244, 175))
+		drop-shadow(0 0 5px rgb(22, 36, 22));
+	transition: 2s;
+	text-transform: uppercase;
+}
+.analys_btn:hover {
+	background-color: rgb(175, 244, 175);
+	filter: drop-shadow(0 0 10px rgb(50, 146, 50))
+		drop-shadow(0 0 10px rgb(22, 36, 22));
+	color: #232323;
+}
+.calories {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding-top: 30px;
+}
+.calories_p {
+	background-color: rgb(175, 244, 175);
+	font-size: 25px;
+	border-radius: 8px;
+	padding: 5px 5px;
+}
+.nutrition_div {
+	padding-top: 15px;
+}
+.nutrition_p {
+	font-size: 18px;
+}
+.label {
+	color: rgb(50, 146, 50);
+}
+.NutritionTitle {
+	background-color: rgb(50, 146, 50);
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.Nutr_Title {
+	text-align: center;
+	color: rgb(235, 235, 235);
+	font-size: 60px;
+	text-shadow: 1px 1px #232323;
+	filter: drop-shadow(0 0 20px rgb(175, 244, 175))
+		drop-shadow(0 0 20px rgb(22, 36, 22));
+}
+.Nutrition__Text {
+	width: 80%;
+	color: rgb(235, 235, 235);
+	text-align: center;
+	margin-top: 20px;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px #232323;
+}
+.container__BLOCK {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url('./nutr3.jpg');
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	object-fit: cover;
+}
+.container_title {
+	font-size: 70px;
+	color: #232323;
+	text-shadow: 1px 1px rgb(252, 252, 252);
+	filter: drop-shadow(0 0 10px rgb(50, 146, 50))
+		drop-shadow(0 0 10px rgb(235, 235, 235));
+}
+.container_text {
+	width: 60%;
+	font-size: 20px;
+	color: rgb(50, 146, 50);
+	background-color: rgb(252, 252, 252);
+	background-color: rgb(252, 252, 252, 0.5);
+	padding: 10px 20px;
+	filter: drop-shadow(0 0 10px rgb(50, 146, 50));
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nutrition_help {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url('./nutr2.jpg');
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	object-fit: cover;
+}
+.nutrition_title {
+	font-size: 50px;
+	color: rgb(252, 252, 252);
+	text-shadow: 1px 1px rgb(50, 146, 50);
+	text-align: center;
+}
+.nutrition_text {
+	width: 70%;
+	margin-top: 10px;
+	filter: drop-shadow(0 0 10px rgb(50, 146, 50));
+	background-color: #96daab;
+	font-size: 20px;
+	text-shadow: 1px 1px rgb(252, 252, 252);
+	padding: 10px 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container_form {
+	background-color: #96daab;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0px 20px;
+	height: 40vh;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	border-radius: 8px;
+	background-color: transparent;
+	margin-top: 15px;
+}
+.container_form_title {
+	font-size: 25px;
+	color: rgb(50, 146, 50);
+	text-shadow: 1px 1px rgb(252, 252, 252);
+	text-transform: uppercase;
+}
+.fill_form {
+	color: #232323;
+	text-shadow: 1px 1px rgb(252, 252, 252);
+	font-size: 16px;
+}
+.form_input {
+	margin-top: 10px;
+	padding: 10px 0px;
+	border-radius: 8px;
+}
+.form_message {
+	margin-top: 10px;
+	padding: 30px 0px;
+	border-radius: 8px;
+}
+.form_btn {
+	margin-top: 10px;
+	background-color: rgb(50, 146, 50);
+	border-radius: 8px;
+	padding: 10px;
+	color: rgb(252, 252, 252);
+	text-transform: uppercase;
+	border: none;
+	transition: 2s;
+	cursor: pointer;
+}
+.form_btn:hover {
+	background-color: rgb(252, 252, 252);
+	color: #232323;
+	filter: drop-shadow(0 0 30px rgb(50, 146, 50))
+		drop-shadow(0 0 30px rgb(235, 235, 235));
+	border: 1px solid #232323;
+}
+.form_input,
+.form_btn,
+.form_message {
+	width: 500px;
+}
+.minerals {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 40vh;
+}
+.minerals_title {
+	font-size: 50px;
+	text-transform: uppercase;
+	color: rgb(50, 146, 50);
+	filter: drop-shadow(0 0 30px rgb(50, 146, 50)) drop-shadow(0 0 30px #96daab);
+}
+.mineral_text_one,
+.mineral_text_two {
+	font-size: 19px;
+	color: #232323;
+	margin: 15px 15px;
+	text-align: center;
+	width: 70%;
+}
+.main_vitamins_container {
+	background-image: url('nutr5.jpg');
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	object-fit: cover;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.vitamins_title {
+	font-size: 50px;
+	color: rgb(252, 252, 252);
+	text-shadow: 1px 1px #232323;
+	text-align: center;
+}
+.vitamins_text {
+	width: 70%;
+	height: 30vh;
+	margin-top: 30px;
+	background-color: rgb(252, 252, 252, 0.5);
+	padding: 10px 10px;
+	font-size: 19px;
+	display: flex;
+	align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+@media all and (max-width: 778px) {
+	.link {
+		font-size: 13px;
+	}
+	.form {
+		width: 40%;
+	}
+	.fill_form {
+		font-size: 21px;
+	}
+	.minerals {
+		height: 50vh;
+	}
+	.vitamins_title {
+		font-size: 45px;
+	}
+	.nutrition_title {
+		font-size: 44px;
+	}
+	.container_title {
+		font-size: 50px;
+	}
+	.vitamins_text {
+		height: 50vh;
+	}
+}
+@media all and (max-width: 700px) {
+	.link {
+		padding: 10px 10px;
+	}
+	.minerals_title {
+		font-size: 41px;
+	}
+	.nutrition_title {
+		font-size: 40px;
+	}
+}
+@media all and (max-width: 600px) {
+	.Nutr_Title {
+		font-size: 40px;
+	}
+	.Nutrition__Text {
+		font-size: 15px;
+	}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media all and (max-width: 550px) {
+	.minerals {
+		height: 60vh;
+	}
+	.minerals_title {
+		font-size: 29px;
+	}
+	.vitamins_title {
+		font-size: 28px;
+	}
+	.container_title {
+		font-size: 43px;
+	}
+	.container_text {
+		margin-top: 15px;
+	}
+	.form_input,
+	.form_btn,
+	.form_message {
+		width: 350px;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.minerals {
+		height: 70vh;
+	}
+	.minerals_title {
+		font-size: 25px;
+	}
+	.link {
+		text-transform: capitalize;
+		font-size: 10px;
+	}
+	.vitamins_text {
+		height: 65vh;
+	}
+}
+@media all and (max-width: 450px) {
+	.form_input,
+	.form_btn,
+	.form_message {
+		width: 300px;
+	}
+  .container_title {
+    font-size: 35px;
+}
+.nutrition_title {
+    font-size: 30px;
+}
 }
