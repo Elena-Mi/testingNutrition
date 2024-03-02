@@ -1,4 +1,4 @@
-export const Nutrition = ({ label, quantity, unit, index }) => {
+export const Nutrition = ({ label, quantity, unit}, index) => {
 	return (
 		<div className="nutrition_div">
 			<p key={index} className="nutrition_p">

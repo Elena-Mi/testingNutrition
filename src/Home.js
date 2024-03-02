@@ -42,15 +42,16 @@ function Home () {
 
 			if (response.ok) {
 				// условие
-				setGetLoader(false)
-				const data = await response.json()
-				console.log(data)
-				setNutrition(data)
+				setGetLoader(false);
+				const data = await response.json();
+				setNutrition(data);
 			} else {
 				setGetLoader(false)
 				alert('Incorrect! Type correct ingredients,please')
 			}
 		}
+
+		
 		// Чтобы страница не перезагружалась и меняем состояние
 		const finalSearch = e => {
 			e.preventDefault()
@@ -97,7 +98,7 @@ function Home () {
 
 				{nutrition &&
 					Object.values(nutrition.totalNutrients).map(
-						({ label, quantity, unit, index }) => (
+						({ label, quantity, unit }, index) => (
 							<Nutrition
 								label={label}
 								quantity={quantity}

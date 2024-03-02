@@ -289,10 +289,23 @@ ul {
 	display: flex;
 	align-items: center;
 }
-
+@media all and (max-height: 500px) {
+	.NutritionTitle {
+		height: 60vh;
+	}
+	.container_form {
+		height: 60vh;
+	}
+	.fill_form {
+		font-size: 22px;
+	}
+  .minerals {
+    height: 70vh;
+  }
+}
 @media all and (max-width: 778px) {
 	.link {
-		font-size: 13px;
+		font-size: 15px;
 	}
 	.form {
 		width: 40%;
@@ -370,9 +383,7 @@ ul {
 		text-transform: capitalize;
 		font-size: 10px;
 	}
-	.vitamins_text {
-		height: 65vh;
-	}
+
 }
 @media all and (max-width: 450px) {
 	.form_input,
@@ -380,10 +391,22 @@ ul {
 	.form_message {
 		width: 300px;
 	}
-  .container_title {
-    font-size: 35px;
+	.container_title {
+		font-size: 35px;
+	}
+	.nutrition_title {
+		font-size: 30px;
+	}
+  .fill_form {
+    font-size: 16px;
 }
-.nutrition_title {
-    font-size: 30px;
-}
+	.vitamins_text {
+		height: 65vh;
+	}
+  .NutritionTitle {
+		height: 40vh;
+	}
+	.container_form {
+		height: 40vh;
+	}
 }
